@@ -1,0 +1,83 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* ensures it stays above other elements */
+    /* optional: gives it a background */
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.1s ease;
+}
+
+.navbar-scrolled {
+    background-color: rgb(0, 0, 0);
+    /* Or any color you like */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    /* Optional: adds shadow */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    gap: 48px;
+}
+
+.logo img {
+    width: 100px;
+    height: 26px;
+}
+
+ul,
+li {
+    cursor: pointer;
+    display: flex;
+    color: #ffffff9e;
+    list-style: none;
+    gap: 24px;
+    font-size: 14px;
+    font-weight: 400;
+
+    &:hover {
+        color: #fff;
+    }
+
+}
+
+.right-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.right-options i {
+    color: #ffffff9e;
+    font-size: 24px;
+}
+
+.right-options p {
+    color: #ffffff9e;
+    font-size: 14px;
+}
+
+.icons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    height: fit-content;
+}
+
+.avatar img {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+}
